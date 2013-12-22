@@ -1,0 +1,16 @@
+{% extends "base.twig" %}
+
+{% block page_heading %}
+    Strava Activity Downloader
+{% endblock %}
+
+{% block content %}
+    {% if athlete %}
+        <h2>Welcome {{ athlete.firstname }}  <small><a href="/deauth">Deauthorise</a></small></h2>
+    {% else %}
+        <a href="https://www.strava.com/oauth/authorize?client_id=294&response_type=code&redirect_uri=http://strava.dev/auth&scope=view_private&state=mystate&approval_prompt=force">
+            <img src="/images/LogInWithStrava.png"/>
+        </a>
+    {% endif %}
+
+        {% endblock %}

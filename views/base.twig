@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
+<html class="no-js" lang="en" >
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block page_title %}Strava Activity Downloader{% endblock %}</title>
+
+    <!-- If you are using CSS version, only link these 2 files, you may add app.css to use for your overrides if you like. -->
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/foundation.css">
+
+
+    <script src="/js/vendor/custom.modernizr.js"></script>
+
+</head>
+<body>
+
+
+<div class="row">
+    <div class="small-12 large-12 columns">
+        <h1>{% block page_heading %}Strava Activity Downloader{% endblock %}</h1>
+        {% block content %}
+        {% endblock %}
+    </div>
+</div>
+
+
+<script src="/js/vendor/jquery.js"></script>
+<script src="/js/foundation.min.js"></script>
+
+<script>
+    $(document).foundation();
+</script>
+</body>
+</html>
